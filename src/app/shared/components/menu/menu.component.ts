@@ -58,7 +58,7 @@ export class MenuComponent implements OnInit{
               label: 'Pipes Personalziados',
               icon: 'pi pi-desktop',
               items: [
-                { label: 'Otro elemento', icon: 'pi pi-align-left'},
+                { label: 'Otro elemento', icon: 'pi pi-align-left', routerLink: 'custom'},
               ]
           },
 
