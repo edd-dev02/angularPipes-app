@@ -1,5 +1,17 @@
 # PipesApp
 
+## PrimeNG command install: 
+npm install primeng@17.18.13
+npm i primeflex@3.3.1
+
+## Styles at angular.json
+"styles": [       
+  "node_modules/primeng/resources/primeng.min.css",
+  "node_modules/primeflex/primeflex.min.css",
+  "node_modules/primeicons/primeicons.css",
+  "primeng/resources/themes/lara-light-blue/theme.css"
+],
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
 ## Development server

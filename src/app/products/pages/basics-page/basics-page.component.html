@@ -1,0 +1,65 @@
+
+<p-panel header="Pipes básicos" class="p-1">
+  <p>
+    Pipes incluídos en Angular - Usualmente en el Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <!-- Textos -->
+  <div class="col-12 md:col-4">
+
+    <p-card header="uppercase">
+      {{ name | uppercase }} <small>| uppercase</small>
+    </p-card>
+
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">
+      {{ name | lowercase }} <small>| lowercase</small>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="titlecase">
+      {{ name | titlecase }} <small>| titlecase</small>
+    </p-card>
+  </div>
+
+  <!-- Fechas -->
+  <div class="col-12 md:col-6">
+    <p-card header="date">
+      <ul>
+        <li class="mb-2"> {{ customDate }} </li>
+        <li class="mb-2"> {{ customDate | date }} <small>| date</small></li>
+        <li class="mb-2"> {{ customDate | date:'short' }} <small>| date:'short'</small></li>
+        <li class="mb-2"> {{ customDate | date:'long' }} <small>| date:'long'</small></li>
+        <li class="mb-2"> {{ customDate | date:'MMMM' }} <small>| date:'MMMM'</small></li>
+        <li class="mb-2"> {{ customDate | date:'MMMM dd, yyyy' }} <small>| date:'MMMM dd, yyyy'</small></li>
+        <li class="mb-2"> {{ customDate | date:'MMMM dd, yyyy' }} <small>| date:'MMMM dd, yyyy'</small></li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li class="mb-2"> {{ customDate | date:'long':'GMT-6' }} <small>| date:'long':'GMT-6'</small></li>
+        <li class="mb-2"> {{ customDate | date:'long':'GMT-4' }} <small>| date:'long':'GMT-4'</small></li>
+        <li class="mb-2"> {{ customDate | date:'long':'':'es-MX' }} <small>| date:'long':'':'es-MX'</small></li>
+        <li class="mb-2"> {{ customDate | date:'long':'':'en-US' }} <small>| date:'long':'':'en-US'</small></li>
+        <li class="mb-2"> {{ customDate | date:'long':'':'fr-CA' }} <small>| date:'long':'':'fr-CA'</small></li>
+      </ul>
+
+
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="titlecase">
+      {{ name | titlecase }} <small>| titlecase</small>
+    </p-card>
+  </div>
+
+</div>
+
